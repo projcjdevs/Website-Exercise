@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+}
+
+.navbar{
+  background-color: #f6f8fa;
+  height: 70px;
+  border-bottom: 1px solid #d0d7de; 
+}
+
+.navbar-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; 
+  padding-left: 15px;/* Space between logo and text */
+}
+
+#logotxt {
+  font-family: 'Courier New', monospace; /* Unique font */
+  font-size: 18px;
+  font-weight: 0;
+}
+
+#logoimg {
+  height: 40px; /* Adjust size */
+  width: auto; /* Keeps aspect ratio */
+}
+
+
+.menu {
+  flex-grow: 1;
+  display:flex;
+  list-style: none;
+  padding-left: 30px;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.menu a {
+  color: #565758;
+  text-decoration: none; 
+  display: inline-block; /* Ensures padding works properly */
+  padding: 5px 15px; /* Adjust as needed */
+
+}
+
+
+.menu li a:hover {
+  color: #565758; 
+  background-color: #ebeef1; 
+  transition: 0.2s; 
+  
+}
+
+.menu li.active a {
+  border-bottom: 3px solid orange; /* Change color as needed */
+  padding-bottom: 10px; /* Adjust spacing */
+}
