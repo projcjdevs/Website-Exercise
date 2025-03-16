@@ -18,18 +18,18 @@ body {
 .logo-container {
   display: flex;
   align-items: center; 
-  padding-left: 15px;/* Space between logo and text */
+  padding-left: 15px;
 }
 
 #logotxt {
-  font-family: 'Courier New', monospace; /* Unique font */
+  font-family: 'Courier New', monospace; 
   font-size: 18px;
   font-weight: 0;
 }
 
 #logoimg {
-  height: 40px; /* Adjust size */
-  width: auto; /* Keeps aspect ratio */
+  height: 40px; 
+  width: auto; 
 }
 
 
@@ -45,8 +45,8 @@ body {
 .menu a {
   color: #565758;
   text-decoration: none; 
-  display: inline-block; /* Ensures padding works properly */
-  padding: 5px 15px; /* Adjust as needed */
+  display: inline-block; 
+  padding: 5px 15px; 
 
 }
 
@@ -59,6 +59,6 @@ body {
 }
 
 .menu li.active a {
-  border-bottom: 3px solid orange; /* Change color as needed */
-  padding-bottom: 10px; /* Adjust spacing */
+  border-bottom: 3px solid orange; 
+  padding-bottom: 10px; 
 }
