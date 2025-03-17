@@ -4,8 +4,9 @@ body {
 
 .navbar{
   background-color: #f6f8fa;
-  height: 70px;
+  height: 55px;
   border-bottom: 1px solid #d0d7de; 
+  box-shadow: 0 3px 4px rgba(23, 23, 23, 0.1);
 }
 
 .navbar-section{
@@ -46,7 +47,7 @@ body {
   color: #565758;
   text-decoration: none; 
   display: inline-block; 
-  padding: 5px 15px; 
+  padding: 5px 10px; 
 
 }
 
@@ -59,6 +60,41 @@ body {
 }
 
 .menu li.active a {
-  border-bottom: 3px solid orange; 
-  padding-bottom: 10px; 
+  border-bottom: 3px solid rgb(255, 136, 0); 
+  padding-bottom: 7px; 
+}
+
+.icons {
+  display: flex;
+  gap: 1px;
+  margin-right: 40px;
+
+}
+
+.icons a {
+  color: #565758;
+  font-size: 24px;
+  padding: 5px 8px;
+}
+
+.icons a:hover {
+  background-color: #ebeef1;
+  transition: 0.2s;
+  
+}
+
+/*Footer*/
+
+.footer {
+  position: fixed; /* Sticks to bottom */
+  bottom: 0;
+  width: 100%;
+  background-color: #f6f8fa; /* Change color as needed */
+  color: #565758;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #d0d7de; 
+  box-shadow: 0 -2px 2px rgba(41, 41, 41, 0.1);
+  font-family: Helvetica, sans-serif;
+  
 }
