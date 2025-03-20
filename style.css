@@ -1,5 +1,19 @@
+@font-face {
+  font-family: 'Open Sauce';
+  src: url('open-sauce.one-regular.ttf') format('truetype');
+  font-weight: normal;
+
+}@font-face {
+  font-family: 'Open Sauce';
+  src: url('open-sauce.one-semibold.ttf') format('truetype');
+  font-weight: bold;
+}
+
 body {
+  font-family: 'Open Sauce', sans-serif;
   margin: 0;
+  min-height: 100vh;
+  padding-top: 55px;
 }
 
 .navbar{
@@ -7,13 +21,17 @@ body {
   height: 55px;
   border-bottom: 1px solid #d0d7de; 
   box-shadow: 0 3px 4px rgba(23, 23, 23, 0.1);
+  position: fixed;  /* Keeps navbar in place when scrolling */
+  top: 0;           /* Stick to the very top */
+  left: 0;
+  width: 100%;      /* Ensure full width */
+  z-index: 1000; 
 }
 
 .navbar-section{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
 }
 
 .logo-container {
@@ -23,8 +41,8 @@ body {
 }
 
 #logotxt {
-  font-family: 'Courier New', monospace; 
-  font-size: 18px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 17px;
   font-weight: 0;
 }
 
@@ -60,41 +78,84 @@ body {
 }
 
 .menu li.active a {
-  border-bottom: 3px solid rgb(255, 136, 0); 
+  border-bottom: 3px solid rgb(255, 136, 0);  
   padding-bottom: 7px; 
 }
 
-.icons {
+/* Dashboard */
+
+.card{
   display: flex;
-  gap: 1px;
-  margin-right: 40px;
-
+  justify-content: center;
+  margin-top: 50px;
+}
+.main-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  background-color: #f6f8fa;
+  width: 70%;
+  height: 300px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.icons a {
-  color: #565758;
-  font-size: 24px;
-  padding: 5px 8px;
-}
-
-.icons a:hover {
-  background-color: #ebeef1;
-  transition: 0.2s;
+.details {
+  margin: 0; 
+  padding: 0;
+  line-height: 0.1;
   
+}
+
+#pfp {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+#name {
+  font-family: 'Open Sauce', sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+#course , #skul {
+  padding-left: 5px;
 }
 
 /*Footer*/
 
 .footer {
-  position: fixed; /* Sticks to bottom */
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  position: fixed; 
   bottom: 0;
   width: 100%;
-  background-color: #f6f8fa; /* Change color as needed */
+  background-color: #f6f8fa;
   color: #565758;
   text-align: center;
-  padding: 10px 0;
   border-top: 1px solid #d0d7de; 
   box-shadow: 0 -2px 2px rgba(41, 41, 41, 0.1);
-  font-family: Helvetica, sans-serif;
+  font-family: Monaco, monospace;
+  
+}
+
+
+.icons a {
+  color: #565758;
+  font-size: 20px;
+  padding: 5px 5px;
+  border-radius: 30px;
+}
+
+.icons a:hover {
+  background-color: #ebeef1;
+  transition: 0.2s;
   
 }
